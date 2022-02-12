@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Faker.Net" Version="2.0.154" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Employess\Employee.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Employee">
+      <HintPath>..\Employess\obj\Debug\net6.0\Employee.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
